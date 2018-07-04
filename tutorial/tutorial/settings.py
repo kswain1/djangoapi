@@ -76,8 +76,8 @@ WSGI_APPLICATION = 'tutorial.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': "djongo",
-        'NAME': "mongodb://heroku_tdjzxjvq:tsemal9bh0rtmu1fdvpr4agmv1@ds125841.mlab.com:25841/heroku_tdjzxjvq",
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
